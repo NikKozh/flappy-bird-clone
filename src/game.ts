@@ -15,8 +15,14 @@ export class Game extends Phaser.Game {
 window.onload = () => {
     const config: GameConfig = {
         title: "Flappy Bird Clone",
-        width: 400,
-        height: 800,
+        width: 500,
+        height: 600,
+        physics: {
+            default: "arcade",
+            arcade: {
+                gravity: { y: 100 }
+            }
+        },
         type: Phaser.AUTO,
         parent: "game",
         scene: [BootScene, MainMenuScene, GameScene],

@@ -13,8 +13,14 @@ exports.Game = Game;
 window.onload = () => {
     const config = {
         title: "Flappy Bird Clone",
-        width: 400,
-        height: 800,
+        width: 500,
+        height: 600,
+        physics: {
+            default: "arcade",
+            arcade: {
+                gravity: { y: 100 }
+            }
+        },
         type: Phaser.AUTO,
         parent: "game",
         scene: [BootScene_1.BootScene, MainMenuScene_1.MainMenuScene, GameScene_1.GameScene],
