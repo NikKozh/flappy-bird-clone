@@ -3,101 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95904e10-e089-4d94-a1ee-8d859dadc546" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/boilerplate/phaser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/Connection.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/asteroid/README.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/asteroid/asteroidFont.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/asteroid/asteroidFont.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/blockade/README.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/blockade/border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/blockade/pcsenior.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/blockade/pcsenior.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/blockade/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/font/font.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/font/font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/other/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/pack.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/readme/README.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/sprites/bird.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/flappyBird/sprites/pipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/snake/README.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/snake/snakeFont.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/games/snake/snakeFont.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/github/phaser3-typescript.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/github/shotsnapp-configuration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/game-config.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/alpha.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/blendMode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/depth.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/flip.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/getBounds.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/mask.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/origin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/pipeline.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/scaleMode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/scrollFactor.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/size.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/texture.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/tint.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/transform.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/components/visible.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/gameobject.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/group.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/image.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/mesh.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/gameobjects/sprite.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheatsheets/scene-config.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boilerplate/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boilerplate/scenes/mainScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/asteroid.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/const/const.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/objects/asteroid.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/objects/bullet.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/objects/ship.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/scenes/bootScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/scenes/gameScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/asteroid/scenes/mainMenuScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/blockade.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/const/const.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/objects/player.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/objects/playerTwo.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/objects/wall.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/scenes/bootScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/scenes/gameScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/blockade/scenes/mainMenuScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/assets/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/assets/coin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/assets/github/coin-runner-big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/assets/github/coin-runner-small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/assets/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/coin-runner.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/objects/coin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/objects/player.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/coin-runner/scenes/game-scene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/flappyBird.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/objects/bird.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/objects/pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/scenes/bootScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/scenes/gameScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/flappyBird/scenes/mainMenuScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/const/const.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/game.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/objects/apple.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/objects/snake.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/scenes/bootScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/scenes/gameScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/scenes/mainMenuScene.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/snake/snake.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/less/styles-fullscreen.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/less/styles.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -124,8 +30,8 @@
       <file leaf-file-name="game.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -210,7 +116,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -223,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,7 +169,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,6 +176,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
@@ -284,6 +191,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -295,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1532363418158</updated>
       <workItem from="1532363426546" duration="2639000" />
-      <workItem from="1532368207686" duration="232000" />
+      <workItem from="1532368207686" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="Delete unnecessary files, create basic project structure">
       <created>1532367097255</created>
@@ -308,19 +231,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2639000" />
+    <option name="totallyTimeSpent" value="2993000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12291667" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -448,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
