@@ -15,12 +15,6 @@ window.onload = () => {
         title: "Flappy Bird Clone",
         width: 500,
         height: 600,
-        physics: {
-            default: "arcade",
-            arcade: {
-                gravity: { y: 100 }
-            }
-        },
         type: Phaser.AUTO,
         parent: "game",
         scene: [BootScene_1.BootScene, MainMenuScene_1.MainMenuScene, GameScene_1.GameScene],
