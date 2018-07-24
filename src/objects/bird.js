@@ -6,6 +6,7 @@ class Bird {
         this.bird = scene.add.graphics();
         this.shape = new Phaser.Geom.Rectangle(scene.sys.canvas.width / 2 - const_1.PLAYER.BIRD_WIDTH / 2, scene.sys.canvas.height / 2 - const_1.PLAYER.BIRD_HEIGHT / 2, const_1.PLAYER.BIRD_WIDTH, const_1.PLAYER.BIRD_HEIGHT);
         this.acceleration = 2;
+        this.score = 0;
     }
     // Элементарная обработка физики
     update() {

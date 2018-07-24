@@ -27,7 +27,7 @@ export class PairPipes {
         );
     }
 
-    update(playerBounds: Phaser.Geom.Rectangle): boolean {
+    update(): void {
         this.topPipeGeom.x -= PIPES.SPEED;
         this.downPipeGeom.x -= PIPES.SPEED;
 
@@ -35,14 +35,6 @@ export class PairPipes {
         this.graphics.lineStyle(4,0x008000,1);
         this.graphics.strokeRectShape(this.topPipeGeom);
         this.graphics.strokeRectShape(this.downPipeGeom);
-
-        // Проверка на пересечение игроком
-        if (Phaser.Geom.Rectangle.Overlaps(this.topPipeGeom, playerBounds) ||
-            Phaser.Geom.Rectangle.Overlaps(this.downPipeGeom, playerBounds)) {
-            // return true;
-        }
-
-        return false;
     }
 
     // Вышла ли пара труб за пределы экрана
@@ -60,5 +52,13 @@ export class PairPipes {
     // Возвращаем позицию верхней трубы, но на самом деле без разницы, координаты X у обеих труб одинаковые
     getX(): number {
         return this.topPipeGeom.x;
+    }
+
+    getTopShape(): Phaser.Geom.Rectangle {
+        return this.topPipeGeom;
+    }
+
+    getDownShape(): Phaser.Geom.Rectangle {
+        return this.downPipeGeom;
     }
 }

@@ -3,6 +3,7 @@ import { PLAYER } from "../const/const";
 export class Bird {
     private bird: Phaser.GameObjects.Graphics;
     private shape: Phaser.Geom.Rectangle;
+    private score: number;
 
     private acceleration: number;
 
@@ -17,6 +18,7 @@ export class Bird {
         );
 
         this.acceleration = 2;
+        this.score = 0;
     }
 
     // Элементарная обработка физики
@@ -39,4 +41,6 @@ export class Bird {
     jump(): void {
         this.acceleration = -5;
     }
+
+
 }

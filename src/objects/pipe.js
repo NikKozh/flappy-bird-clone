@@ -17,19 +17,13 @@ class PairPipes {
         const_1.PIPES.WIDTH, scene.sys.canvas.height - downPipeStartY + 5 // учитываем границу в 4 пиксела, чтобы труба оказалась за экраном
         );
     }
-    update(playerBounds) {
+    update() {
         this.topPipeGeom.x -= const_1.PIPES.SPEED;
         this.downPipeGeom.x -= const_1.PIPES.SPEED;
         this.graphics.clear();
         this.graphics.lineStyle(4, 0x008000, 1);
         this.graphics.strokeRectShape(this.topPipeGeom);
         this.graphics.strokeRectShape(this.downPipeGeom);
-        // Проверка на пересечение игроком
-        if (Phaser.Geom.Rectangle.Overlaps(this.topPipeGeom, playerBounds) ||
-            Phaser.Geom.Rectangle.Overlaps(this.downPipeGeom, playerBounds)) {
-            // return true;
-        }
-        return false;
     }
     // Вышла ли пара труб за пределы экрана
     isOffScreen() {
@@ -43,6 +37,12 @@ class PairPipes {
     // Возвращаем позицию верхней трубы, но на самом деле без разницы, координаты X у обеих труб одинаковые
     getX() {
         return this.topPipeGeom.x;
+    }
+    getTopShape() {
+        return this.topPipeGeom;
+    }
+    getDownShape() {
+        return this.downPipeGeom;
     }
 }
 exports.PairPipes = PairPipes;

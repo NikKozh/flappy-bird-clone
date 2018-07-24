@@ -24,25 +24,19 @@ class GameScene extends Phaser.Scene {
     }
     update() {
         this.pipes.forEach((pipes, index) => {
-            if (pipes.update(this.player.getBounds())) {
-                this.g = true;
+            pipes.update();
+            // Проверяем столкновение каждой трубы с игроком
+            if (Phaser.Geom.Rectangle.Overlaps(pipes.getTopShape(), this.player.getBounds()) ||
+                Phaser.Geom.Rectangle.Overlaps(pipes.getDownShape(), this.player.getBounds())) {
+                // this.g = true; // что-то делаем после столкновения
             }
+            // Когда пара труб оказывается за пределами экрана - удаляем её
             if (pipes.isOffScreen()) {
                 this.pipes.splice(index, 1);
                 console.debug(this.pipes.length);
             }
         });
         this.player.update();
-        /*if (this.pipes.length > 0) {
-            for (let i = 0; i < this.pipes.length; i++) {
-                this.pipes[i].update();
-
-                if (this.pipes[i].isOffScreen()) {
-                    this.pipes[i] = null;
-                    break;
-                }
-            }
-        }*/
         if (!this.g) {
             // Если последняя пара труб ушла достаточно далеко от конца экрана, создаём ещё одну
             if ((this.sys.canvas.width - this.pipes[this.pipes.length - 1].getX()) >= const_1.PIPES.HORIZONTAL_GAP) {
