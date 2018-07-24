@@ -3,7 +3,10 @@
 So, nothing special. Small test task with simple architeсture.
 No assets, only graphical primitives and default font.
 
-Instruments and languages: HTML5, Phaser 3, Typescript and Webpack (need Node.js and npm).
+Instruments and languages: HTML5, Phaser 3, Typescript and Webpack (need also Node.js and npm).
+
+## Controls
+Just left mouse button. :)
 
 ## If you want to build up this project manually, follow the intructions:
 
