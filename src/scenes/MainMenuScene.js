@@ -11,13 +11,11 @@ class MainMenuScene extends Phaser.Scene {
     }
     // Выводим главное меню на экран: текст и кнопка
     create() {
-        this.caption1 = this.add.text(this.sys.canvas.width / 2, 90, 'Flappy Bird', {
-            fonFamily: "Times New Roman",
-            fontSize: 40
+        this.caption1 = this.add.text(this.sys.canvas.width / 2, 90, 'FLAPPY BIRDS', {
+            fontSize: 45
         });
-        this.caption2 = this.add.text(this.sys.canvas.width / 2, 130, '(minimalistic)', {
-            fonFamily: "Times New Roman",
-            fontSize: 40
+        this.caption2 = this.add.text(this.sys.canvas.width / 2, 130, 'on minimals', {
+            fontSize: 28
         });
         this.caption1.setOrigin(0.5, 0.5);
         this.caption2.setOrigin(0.5, 0.5);
@@ -39,13 +37,11 @@ class MainMenuScene extends Phaser.Scene {
         });
         this.playButton.on('pointerdown', () => this.scene.start('GameScene'));
         this.goText = this.add.text(this.playButtonGeom.x + 15, this.playButtonGeom.y + 20, 'GO', {
-            fonFamily: "Arial",
             fontSize: 60,
             fontStyle: "bold"
         });
         this.goText.setColor('black');
         this.score = this.add.text(this.sys.canvas.width / 2, this.sys.canvas.height - 75, 'HIGH SCORE: ' + const_1.HIGH_SCORE, {
-            fonFamily: "Times New Roman",
             fontSize: 40
         });
         this.score.setOrigin(0.5, 0.5);

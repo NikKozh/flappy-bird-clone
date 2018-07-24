@@ -26,19 +26,17 @@ export class MainMenuScene extends Phaser.Scene {
         this.caption1 = this.add.text(
             this.sys.canvas.width / 2,
             90,
-            'Flappy Bird',
+            'FLAPPY BIRDS',
             {
-                fonFamily: "Times New Roman",
-                fontSize: 40
+                fontSize: 45
             }
         );
         this.caption2 = this.add.text(
             this.sys.canvas.width / 2,
             130,
-            '(minimalistic)',
+            'on minimals',
             {
-                fonFamily: "Times New Roman",
-                fontSize: 40
+                fontSize: 28
             }
         );
         this.caption1.setOrigin(0.5, 0.5);
@@ -73,7 +71,6 @@ export class MainMenuScene extends Phaser.Scene {
             this.playButtonGeom.y + 20,
             'GO',
             {
-                fonFamily: "Arial",
                 fontSize: 60,
                 fontStyle: "bold"
             }
@@ -85,7 +82,6 @@ export class MainMenuScene extends Phaser.Scene {
             this.sys.canvas.height - 75,
             'HIGH SCORE: ' + HIGH_SCORE,
             {
-                fonFamily: "Times New Roman",
                 fontSize: 40
             }
         );
