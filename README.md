@@ -5,7 +5,7 @@ No assets, only graphical primitives and default font.
 
 Instruments and languages: HTML5, Phaser 3, Typescript and Webpack (need Node.js and npm).
 
-## I don't have a dedicated server, so if you want to run this project, please, follow the instructions:
+## If you want to build up this project manually, follow the intructions:
 
 ### Prerequisites
 
