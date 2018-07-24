@@ -4,7 +4,8 @@ export class MainMenuScene extends Phaser.Scene {
     private caption1: Phaser.GameObjects.Text;
     private caption2: Phaser.GameObjects.Text;
     private goText: Phaser.GameObjects.Text;
-    private score: Phaser.GameObjects.Text;
+    private bestScore: Phaser.GameObjects.Text;
+    private lastScore: Phaser.GameObjects.Text;
 
     private playButton: Phaser.GameObjects.Graphics;
     private playButtonGeom: Phaser.Geom.Rectangle;
@@ -77,15 +78,25 @@ export class MainMenuScene extends Phaser.Scene {
         );
         this.goText.setColor('black');
 
-        this.score = this.add.text(
+        this.lastScore = this.add.text(
             this.sys.canvas.width / 2,
-            this.sys.canvas.height - 75,
-            'HIGH SCORE: ' + PLAYER.HIGH_SCORE,
+            this.sys.canvas.height - 100,
+            'LAST SCORE: ' + PLAYER.LAST_SCORE,
             {
                 fontSize: 40
             }
         );
-        this.score.setOrigin(0.5, 0.5);
+        this.lastScore.setOrigin(0.5, 0.5);
+
+        this.bestScore = this.add.text(
+            this.sys.canvas.width / 2,
+            this.sys.canvas.height - 45,
+            'BEST SCORE: ' + PLAYER.BEST_SCORE,
+            {
+                fontSize: 40
+            }
+        );
+        this.bestScore.setOrigin(0.5, 0.5);
     }
 
     update(): void {

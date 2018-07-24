@@ -19,7 +19,7 @@ window.onload = () => {
         parent: "game",
         scene: [BootScene_1.BootScene, MainMenuScene_1.MainMenuScene, GameScene_1.GameScene],
         input: {
-            keyboard: true,
+            keyboard: false,
             mouse: true,
             touch: false,
             gamepad: false

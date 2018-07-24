@@ -3,19 +3,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const const_1 = require("../const/const");
 // Класс, описывающий сразу верхнюю и нижнюю трубы и отвечающий за их логику
 class PairPipes {
-    constructor(scene) {
+    constructor(scene, startX = 10) {
         this.graphics = scene.add.graphics();
         // Расчёт положения труб исходя из желаемого расстояния между ними (VERTICAL_GAP)
         let topPipesEndY = Phaser.Math.RND.between(80, scene.sys.canvas.height - const_1.PIPES.VERTICAL_GAP - 80);
-        this.topPipeGeom = new Phaser.Geom.Rectangle(scene.sys.canvas.width + 10, // за пределами экрана
+        this.topPipeGeom = new Phaser.Geom.Rectangle(scene.sys.canvas.width + startX, // за пределами экрана
         -5, // учитываем границу в 4 пиксела, чтобы труба оказалась за экраном
         const_1.PIPES.WIDTH, topPipesEndY // координата Y, где кончается верхняя труба
         );
         let downPipeStartY = topPipesEndY + const_1.PIPES.VERTICAL_GAP;
-        this.downPipeGeom = new Phaser.Geom.Rectangle(scene.sys.canvas.width + 10, // за пределами экрана
+        this.downPipeGeom = new Phaser.Geom.Rectangle(scene.sys.canvas.width + startX, // за пределами экрана
         downPipeStartY, // координата Y, где начинается нижняя труба
         const_1.PIPES.WIDTH, scene.sys.canvas.height - downPipeStartY + 5 // учитываем границу в 4 пиксела, чтобы труба оказалась за экраном
         );
+        this.isCrossed = false;
     }
     update() {
         this.topPipeGeom.x -= const_1.PIPES.SPEED;
@@ -43,6 +44,12 @@ class PairPipes {
     }
     getDownShape() {
         return this.downPipeGeom;
+    }
+    isCrossedCenter() {
+        return this.isCrossed;
+    }
+    pairCrossedCenter(isCross) {
+        this.isCrossed = isCross;
     }
 }
 exports.PairPipes = PairPipes;

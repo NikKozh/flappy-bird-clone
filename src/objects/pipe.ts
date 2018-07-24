@@ -6,13 +6,15 @@ export class PairPipes {
     private topPipeGeom: Phaser.Geom.Rectangle;    // сами
     private downPipeGeom: Phaser.Geom.Rectangle;   // примитивы
 
-    constructor(scene: Phaser.Scene) {
+    private isCrossed: boolean; // пересекла ли пара труб центр поля
+
+    constructor(scene: Phaser.Scene, startX: number = 10) {
         this.graphics = scene.add.graphics();
 
         // Расчёт положения труб исходя из желаемого расстояния между ними (VERTICAL_GAP)
         let topPipesEndY: number = Phaser.Math.RND.between(80, scene.sys.canvas.height - PIPES.VERTICAL_GAP - 80);
         this.topPipeGeom = new Phaser.Geom.Rectangle(
-            scene.sys.canvas.width + 10, // за пределами экрана
+            scene.sys.canvas.width + startX, // за пределами экрана
             -5, // учитываем границу в 4 пиксела, чтобы труба оказалась за экраном
             PIPES.WIDTH,
             topPipesEndY // координата Y, где кончается верхняя труба
@@ -20,11 +22,13 @@ export class PairPipes {
 
         let downPipeStartY: number = topPipesEndY + PIPES.VERTICAL_GAP;
         this.downPipeGeom = new Phaser.Geom.Rectangle(
-            scene.sys.canvas.width + 10, // за пределами экрана
+            scene.sys.canvas.width + startX, // за пределами экрана
             downPipeStartY, // координата Y, где начинается нижняя труба
             PIPES.WIDTH,
             scene.sys.canvas.height - downPipeStartY + 5 // учитываем границу в 4 пиксела, чтобы труба оказалась за экраном
         );
+
+        this.isCrossed = false;
     }
 
     update(): void {
@@ -60,5 +64,13 @@ export class PairPipes {
 
     getDownShape(): Phaser.Geom.Rectangle {
         return this.downPipeGeom;
+    }
+
+    isCrossedCenter(): boolean {
+        return this.isCrossed;
+    }
+
+    pairCrossedCenter(isCross: boolean): void {
+        this.isCrossed = isCross;
     }
 }
