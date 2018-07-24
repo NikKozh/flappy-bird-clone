@@ -36,13 +36,14 @@ export class GameScene extends Phaser.Scene {
     }
 
     update(): void {
-        this.pipes.forEach((pipes: PairPipes) => {
+        this.pipes.forEach((pipes: PairPipes, index: number) => {
             if (pipes.update(this.player.getBounds())) {
                 this.g = true;
             }
 
             if (pipes.isOffScreen()) {
-                pipes = null;
+                this.pipes.splice(index, 1);
+                console.debug(this.pipes.length);
             }
         });
 

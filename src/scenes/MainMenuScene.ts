@@ -1,4 +1,4 @@
-﻿import { HIGH_SCORE } from '../const/const';
+﻿import { PLAYER } from '../const/const';
 
 export class MainMenuScene extends Phaser.Scene {
     private caption1: Phaser.GameObjects.Text;
@@ -80,7 +80,7 @@ export class MainMenuScene extends Phaser.Scene {
         this.score = this.add.text(
             this.sys.canvas.width / 2,
             this.sys.canvas.height - 75,
-            'HIGH SCORE: ' + HIGH_SCORE,
+            'HIGH SCORE: ' + PLAYER.HIGH_SCORE,
             {
                 fontSize: 40
             }
