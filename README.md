@@ -1,6 +1,6 @@
 ## Flappy Bird Clone (on minimals)
 
-So, nothing special. Small test task with simple architeсture.
+So, nothing special. Small project with simple architeсture.
 No assets, only graphical primitives and default font.
 
 Instruments and languages: HTML5, Phaser 3, Typescript and Webpack (need also Node.js and npm).
